@@ -1,0 +1,208 @@
+<html>
+<head>
+    <title>Haven</title>
+    <meta charset="utf-8    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
+
+    <!-- material.io icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <div id="landing-page" class="col-container">
+        <div id="section-details" class="col" style="float: left;width: 50%;background: #1dc5ea;">
+            <div class="content">
+                <img src="assets/images/logo.png"/>
+                <p style="margin-top: 4em;color: #fff;">
+                    <span style="font-size: 70px;">Lorem ipsum dolor sit amet</span> <br/>
+                    <span style="font-size: 28px;line-height: 2em;">
+                         consectetur adipiscing elit, sed do eius mod
+                         tempor incididunt ut labore et dolore
+                         magna aliqua onsectetur adipscing
+                         elit, sed do eius mod tempor incid.
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="section-news" class="col" style="">
+            <div class="content">
+                <p class="header">News & blog</p>
+                <hr/>
+                <ul>
+                    <li>
+                        <a href="#">KiwiSaver HomeStart grant explained</a>
+                        <i class="material-icons">arrow_right</i>
+                    </li>
+                    <li>
+                        <a href="#">What's happening in the property market?</a>
+                        <i class="material-icons">arrow_right</i>
+                    </li>
+                    <li>
+                        <a href="#">Trust law reform</a>
+                        <i class="material-icons">arrow_right</i>
+                    </li>
+                    <li>
+                        <a href="#">Tax update - Simplication of taxes, foreign ...</a>
+                        <i class="material-icons">arrow_right</i>
+                    </li>
+                    <li>
+                        <a href="#">What do the new lending rules mean?</a>
+                        <i class="material-icons">arrow_right</i></li>
+                    <li>
+                        <a href="#">How will the Reserve Bank respond to ...</a>
+                        <i class="material-icons">arrow_right</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu">
+        <ul>
+            <li id="res-menu-link" style="display: none;"><a href="">Menu</a></li>
+            <li><a href="">Book keeping & payroll</a></li>
+            <li><a href="">Financial & GST</a></li>
+            <li><a href="">KiwiSave advice</a></li>
+            <li><a href="">Insuring people</a></li>
+            <li><a href="">Tax & business advice</a></li>
+            <li><a href="">Trustee services</a></li>
+            <li><a href="">Mortgage advice</a></li>
+        </ul>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Section Financial -->
+    <div id="section-financial" class="col-container">
+        <div id="financial-vid-img" class="col">
+            <img id='img-financial' src="assets/images/video-img.png"/>
+        </div>
+        <div id="financial-details" class="col">
+            <p style="font-size: 24px;padding-top: 35px;">Why have a financial
+                adviser?</p>
+            <p style="letter-spacing: 1px;font-size: 15px;line-height: 1.5em;">
+                Haven was created out of the need to simply do things better. With specialist advisers
+                across a range of financial services,
+                we will offer you the best, practical advice for your unique situation.
+            </p>
+            <p>
+                Our financial advisers span the north and south island making us conveniently positioned
+                wherever you need us.
+            </p>
+            <div style="text-align: center;">
+                <div id="btn-learn-more">
+                    <a href="#">
+                        <span style="float: left;margin-right: 10px;margin-top: 6px;">Learn more About Advisers</span>
+                        <img style="float: left;" src="assets/images/white-arrow.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Financial -->
+
+    <!-- Section Contact -->
+    <div id="section-contact" class="col-container">
+        <div id="form-contact" class='col'>
+            <p style="font-size: 20px;color: #fff;letter-spacing: 1px;">Contact us today</p>
+            <p style="font-size: 15px;color: #fff;letter-spacing: 1px;">Brief intro paragraph about this section. Bis
+                porepelent quam
+                <br/>nam ut raeptam facillo riberum sitatur aut proprepriata volorer</p>
+            <form>
+                <table style="margin: auto;">
+                    <tr>
+                        <td><input type="text" id="full_name" placeholder="Full name*" maxlength="80" required/></td>
+                        <td><input type="email" id="email_address" placeholder="Email address*" maxlength="80"
+                                   required/></td>
+                        <td><input type="text" id="contact_no" placeholder="Contact number*" maxlength="11" required
+                                   onkeypress="return preventString(event)"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><select id="book_meeting">
+                            <option value="meeting">Book a meeting</option>
+                        </select></td>
+                        <td><select id="day">
+                            <option value="">Preferred day*</option>
+                            <option value="Mon">Monday</option>
+                            <option value="Tue">Tuesday</option>
+                            <option value="Wed">Wednesday</option>
+                            <option value="Thu">Thursday</option>
+                            <option value="Fri">Friday</option>
+                            <option value="Sat">Saturday</option>
+                            <option value="Su">Sunday</option>
+                        </select></td>
+                        <td id="time_container"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><textarea id="message" rows="4" placeholder="Message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button type="button" id="btn-submit" type="text" style="float: right;">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+        <div id='contact-links' class='col'>
+            <p class="header" style="padding-left: 38px;">Contact Us</p>
+            <hr/>
+            <ul>
+                <li><a href="#"><i class="material-icons">place</i><span>Find an adviser</span></a></li>
+                <li><a href="#"><i class="material-icons">forum</i>Talk to an accountant</a></li>
+                <li><a href="#"><i class="material-icons">home</i>Talk to a mortgage broker</a></li>
+                <li><a href="#"><i class="material-icons">phone</i>0800 700 699</a></li>
+                <li><a href="#"><i class="material-icons">email</i>reception@havenadvisers.co.nz</a></li>
+                <li><a href="#">
+                    <img class="material-icon-img" src="assets/images/facebook.png" style="height: 24px;">Be a part
+                    of our Facebook community</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Section Contact -->
+
+    <!-- Footer -->
+    <div id="footer" class="col-container" style="width: 100%;">
+        <div id="form-newsletter">
+            <form>
+                <span style="color: #fff;letter-spacing: 1px;font-size: 12px;margin-right: 10px;">SIGN UP TO OUR NEWS LETTER</span>
+                <input type="text" id="n_full_name" placeholder="Full Name" style="margin-right: 10px;"/>
+                <input type="text" id="n_email_address" placeholder="Email Address"/>
+                <button id="btn-submit-newsletter" type="button">Submit</button>
+            </form>
+        </div>
+
+        <img src="assets/images/logo.png"/>
+
+        <ul id="navigation-links">
+            <li><a href="">HOME</a></li>
+            <li><a href="">OUR SERVICES</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">TESTIMONIALS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+
+        <p id="footer-contact">
+            0800 7008 699 <br/>
+            reception@havenadvisers.co.nz
+        </p>
+
+        <p id="copyright">Copyright &copy; 2017 Haven Advisers Limited. All rights reserved.</p>
+    </div>
+    <!-- End Footer-->
+</div>
+<!-- End of Wrapper -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
